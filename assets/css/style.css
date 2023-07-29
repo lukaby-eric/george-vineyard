@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'ADOBE CASLON PRO';
+    text-decoration: none;
+    transition: .4s;
+}
+#navbar a{
+    float: right;
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+}
+#navbar a:hover{
+    color: rgb(251, 109, 20);
+}
+#home{
+    height: 100%;
+    width: 100%;
+    padding: 200px 0;
+    background: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: home 90s linear infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes home {
+    0%{
+        background-position: bottom;
+    }
+    50%{
+        background-position: center;
+    }
+    100%{
+        background-position: top;
+    }
+}
+#home img{
+    width: 50%;
+}
+/* about */
+#about{
+    color: white;
+    background: rgb(32, 29, 29);
+}
+#about video{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px black;
+}
+#about img{
+    height: 400px;
+}
+#about .card{
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px black;
+}
+#about #card{
+    height: 400px;
+    width: 100%;
+    background: url(../images/shutterstock_1400180222.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#about #card img{
+    width: 250px;
+    height: 120px;
+}
+/* last */
+#last{
+    border-top: 2px solid white;
+}

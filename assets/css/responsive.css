@@ -1,0 +1,24 @@
+
+@media only screen and (max-width: 550px){
+    #home img{
+        width: 100%;
+    }
+  
+}
+@media only screen and (max-width: 400px){
+    #home{
+        padding: 150px 0;
+        background-attachment: scroll;
+    }
+    
+}
+@media only screen and (max-width: 300px){
+    #about #card{
+        height: 300px;
+    }
+    #about #card img{
+        width: 200px;
+        height: 90px;
+    }
+    
+}
