@@ -14,13 +14,13 @@
     <!---------------------------------------------- Navbar ---------------------------------------------->
         <div id="navbar">
             <div class="container">
-                <a href="#" class="py-3">Contact Us</a>
+                <a onclick="openForm()" class="py-3">Contact Us</a>
             </div>   
         </div>
         <!-- home -->
         <div id="home">
             <div class="container text-center">
-                <img src="assets/images/title.png" alt="">
+                <img src="assets/images/text.png" alt="">
             </div>
         </div>
 <!-- about -->
@@ -48,8 +48,16 @@
                 </div>
             </div>
             <div class="text-center py-3" id="last">
-                <h3>CONTAC US | 6295 MELITA RD., SANTA ROSA, CA 95405</h3>
+                <h3>CONTACT US | 6295 MELITA RD., SANTA ROSA, CA 95405</h3>
             </div>
         </section>
+
+        <div id="contact-form">
+            <div class="container">
+                <button id="close-btn" onclick="closeForm()" class="btn btn-danger my-3">Close</button>
+                <iframe src="https://brgrkitchen.formstack.com/forms/george_vinyard" title="George Vinyard" width="100%" height="400"></iframe>
+            </div>
+        </div>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
