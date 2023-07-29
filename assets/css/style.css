@@ -8,11 +8,16 @@
     text-decoration: none;
     transition: .4s;
 }
+#navbar{
+    position: relative;
+    z-index: 11;
+}
 #navbar a{
     float: right;
     font-size: 23px;
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 #navbar a:hover{
     color: rgb(251, 109, 20);
@@ -21,7 +26,9 @@
     height: 100%;
     width: 100%;
     padding: 200px 0;
-    background: url(../images/bg.jpg);
+    position: relative;
+    z-index: 1;
+    background: url(../images/shutterstock_1712289925.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -39,13 +46,26 @@
         background-position: top;
     }
 }
+#home::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.221),black);
+    z-index: -1;
+}
 #home img{
-    width: 50%;
+    width: 70%;
 }
 /* about */
 #about{
     color: white;
     background: rgb(32, 29, 29);
+}
+#about h2{
+    letter-spacing: 3px;
 }
 #about video{
     height: 400px;
@@ -80,4 +100,24 @@
 /* last */
 #last{
     border-top: 2px solid white;
+}
+/* contact form */
+#contact-form{
+    position: fixed;
+    height: 100dvh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1111;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0,0);
+}
+#contact-form iframe{
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 4px grey;
 }
