@@ -9,11 +9,13 @@
     transition: .4s;
 }
 #navbar{
-    position: relative;
+    width: 100%;
+    position: absolute;
     z-index: 11;
 }
 #navbar a{
-    float: right;
+    position: absolute;
+    right: 10%;
     font-size: 23px;
     color: white;
     text-decoration: none;
@@ -25,39 +27,17 @@
 #home{
     height: 100%;
     width: 100%;
-    padding: 200px 0;
-    position: relative;
-    z-index: 1;
-    background: url(../images/shutterstock_1712289925.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    animation: home 90s linear infinite;
-    animation-direction: alternate-reverse;
 }
-@keyframes home {
-    0%{
-        background-position: bottom;
-    }
-    50%{
-        background-position: center;
-    }
-    100%{
-        background-position: top;
-    }
+#home .carousel img{
+    object-fit: cover;
+    height: 600px;
 }
-#home::before{
-    content: "";
+#home #home-text{
     position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.221),black);
-    z-index: -1;
-}
-#home img{
+    z-index: 5;
     width: 70%;
+    left: 15%;
+    top: 30%;
 }
 /* about */
 #about{
@@ -108,7 +88,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.432);
     z-index: 1111;
     text-align: center;
     display: flex;
