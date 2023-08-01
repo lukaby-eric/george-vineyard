@@ -1,16 +1,29 @@
 
-@media only screen and (max-width: 550px){
-    #home img{
-        width: 100%;
+@media only screen and (max-width: 650px){
+    #home .carousel img{
+        object-fit: cover;
+        height: 500px;
     }
   
 }
-@media only screen and (max-width: 400px){
-    #home{
-        padding: 150px 0;
-        background-attachment: scroll;
+@media only screen and (max-width: 500px){
+    #home .carousel img{
+        object-fit: cover;
+        height: 400px;
     }
-    
+    #home #home-text{
+        position: absolute;
+        z-index: 5;
+        width: 80%;
+        left: 10%;
+        top: 30%;
+    }
+}
+@media only screen and (max-width: 350px){
+    #home .carousel img{
+        object-fit: cover;
+        height: 350px;
+    }
 }
 @media only screen and (max-width: 300px){
     #about #card{
