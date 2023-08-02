@@ -18,6 +18,9 @@
         left: 10%;
         top: 30%;
     }
+    #home .carousel-inner .item, .active{
+        transition: 1s ease-in-out;
+    }
 }
 @media only screen and (max-width: 350px){
     #home .carousel img{
