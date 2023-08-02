@@ -28,9 +28,13 @@
     height: 100%;
     width: 100%;
 }
-#home .carousel img{
+#home .carousel-inner img{
     object-fit: cover;
     height: 600px;
+    width: 100%;
+}
+#home .carousel-inner .item, .active{
+    transition: 1s ease-in-out;
 }
 #home #home-text{
     position: absolute;
@@ -39,6 +43,7 @@
     left: 15%;
     top: 30%;
 }
+
 /* about */
 #about{
     color: white;
